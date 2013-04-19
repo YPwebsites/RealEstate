@@ -1,11 +1,11 @@
-@import url("gfx/wp-skeleton.css"); /* Upload stylesheet to GFX folder */
+@import url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/wp-skeleton.css"); /* Upload stylesheet to GFX folder */
 
 @font-face {
 	font-family: "Century Gothic";
-	src: url("gfx/GOTHIC.TTF"),
-		 url("gfx/GOTHICI.TTF"),
-		 url("gfx/GOTHICB.TTF"),
-		 url("gfx/GOTHICBI.TTF");
+	src: url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/GOTHIC.TTF"),
+		 url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/GOTHICI.TTF"),
+		 url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/GOTHICB.TTF"),
+		 url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/GOTHICBI.TTF");
 }
 
 header, footer, nav, section, article {display: block;}
@@ -20,7 +20,7 @@ body {
 	}
 	body#mysite { 
 		/* Set background image POSITION and REPEAT here! */
-		background-image:url("gfx/bodyBG.jpg");	
+		background-image:url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/bodyBG.jpg");	
 	
 		}
 		
@@ -43,7 +43,7 @@ h5, h5 span, h5 font span,
 h6, h6 span, h6 font span
  {
 	font-weight:normal;
-	margin-bottom : 18px;
+	margin-bottom : 12px;
 	line-height: 120%;
 	font-family: "Century Gothic", Verdana, Geneva, sans-serif;
 	color: #1f4176;
@@ -276,10 +276,11 @@ a:focus {
 	}
 	
 div.header-container {
-/*	background: transparent url("gfx/headerBG.jpg") top left repeat; */
-	background-image: url("gfx/headerBG.jpg");
-	min-height: 109px;
+/*	background: transparent url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/headerBG.jpg") top left repeat; */
+	background-image: url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/headerBG.jpg");
+	display: inline-block;
 	position: relative;
+	padding-bottom: 20px;
 }
 	
 #wrapper-footer, #wrapper-copyright { 
@@ -301,7 +302,7 @@ div.header-container {
 }
 
 #sidebar {
-	background: transparent url("gfx/sidbarBG.jpg") top left repeat;
+	background: transparent url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/sidbarBG.jpg") top left repeat;
 	display:table-cell;
 	*display:block !important;  
 	*float:left; /* display:block and float:left are fixes for IE7 do not remove */
@@ -318,7 +319,7 @@ div.header-container {
 	position: relative;	
 }
 #sidebar div.secondBG {
-	background: url("gfx/sidebarRealter.png") no-repeat scroll center top transparent;
+	background: url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/sidebarRealter.png") no-repeat scroll center top transparent;
     bottom: 0;
     height: 450px;
     position: absolute;
@@ -349,33 +350,45 @@ div.footerArea {
 
 #logo {
   font-size: 35px;
-  padding: 25px 0;
+  padding: 20px 0 0px;
   text-align:left;
   text-transform: uppercase;
 }
 	
-#logo a, #logo a:hover {	
-	font: 50px/50px "Century Gothic", Verdana, Geneva, sans-serif;
+#logo a, #logo a:hover, #logo a div, #logo a:hover div {	
+	font: 42px/42px "Century Gothic", Verdana, Geneva, sans-serif;
 	text-decoration:none;
 	text-transform: uppercase;
 	color:#fff;
 	text-shadow: 1px 1px 0px #0e62c8, 2px 2px 3px #444444;
+	-webkit-text-shadow: 1px 1px 0px #0e62c8, 2px 2px 3px #444444;
 	}
-	
+div.slogan {
+	font: 24px/24px "Century Gothic", Verdana, Geneva, sans-serif;
+	text-decoration:none;
+	text-transform: uppercase;
+	color:#fff;
+	text-shadow: 1px 1px 0px #0e62c8, 2px 2px 3px #444444;
+	-webkit-text-shadow: 1px 1px 0px #0e62c8, 2px 2px 3px #444444;
+}
 	
 /* Phone */
 #phone-number,
 #m-phone-number {
-	font-size: 35px;
-	line-height: 35px;
+	padding:20px 0px 0px;
+	position: relative;
+	}
+#phone-number div,
+#m-phone-number div {
+	font-size: 30px;
+	line-height: 30px;
 	text-align:right;
 	text-transform:uppercase;
 	color:#fff;	
-	padding:40px 0px 25px;
-	position: relative;
-	bottom: 0px;
 	text-shadow: 1px 1px 0px #0e62c8, 2px 2px 3px #444444;
-	}
+	-webkit-text-shadow: 1px 1px 0px #0e62c8, 2px 2px 3px #444444;
+}	
+	
 #m-phone-number a {
 	color: #fff;
 	text-decoration: none;
@@ -390,7 +403,7 @@ div.footerArea {
 	
 	padding-bottom: 11px;
 	margin-bottom: 15px;
-	background: transparent url("gfx/header-wraper-bg960.png") bottom center no-repeat;
+	background: transparent url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/header-wraper-bg960.png") bottom center no-repeat;
   }
 
 #header-image-wrapper-1 {
@@ -424,11 +437,12 @@ img#siteMainDynHeaderImage1 {
 			width: 746px;
 		}
 		#header-image-container {
-			background-image: url("gfx/header-wraper-bg768.png");
+			background-image: url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/header-wraper-bg768.png");
 			padding-bottom: 7px;	
 		}
-		#logo a {
-			font-size: 48px;
+		
+		#logo a, #logo a:hover, #logo a div, #logo a:hover div {
+			font-size: 42px;
 		}
 	}
 
@@ -458,9 +472,9 @@ img#siteMainDynHeaderImage1 {
 			width: 398px;
 		}
 		#header-image-container {
-			background-image: url("gfx/header-wraper-bg420.png");
+			background-image: url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/header-wraper-bg420.png");
 			padding-bottom: 4px;	
-			margin: 0 10px;
+			margin: 10px 10px 0;
 		}
 		#logo a {
 			font-size: 36px;	
@@ -481,14 +495,14 @@ img#siteMainDynHeaderImage1 {
 				width:300px;
 				display:block;
 			}	
-		#header-image-container {margin-left:10px; margin-right:10px;}
+
 		img#siteMainDynHeaderImage1 {
 			width: 278px;
 		}
 		#header-image-container {
-			background-image: url("gfx/header-wraper-bg300.png");
+			background-image: url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/header-wraper-bg300.png");
 			padding-bottom: 2px;	
-			margin: 0 10px;
+			margin: 10px 10px 0;
 		}
 		#logo a {
 			font-size: 30px;	
@@ -502,7 +516,7 @@ img#siteMainDynHeaderImage1 {
 /* footer */
 
 #footer-area {
-	background: transparent url("gfx/footerBG.jpg") top left repeat;
+	background: transparent url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/footerBG.jpg") top left repeat;
 	border: 1px solid #fff;
 	width: 958px;
 }
@@ -513,7 +527,7 @@ div.contactInfo span {
 	width: 100%;
 	display: block;
 }
-div.footerData span {
+span.credit.footerLinks {
 	font: 12px/90px "Century Gothic", Verdana, Geneva, sans-serif;	
 	color: #fff;
 	text-align: right;
@@ -522,13 +536,13 @@ div.footerData span {
 	width: 100%;
 }	
 nav#modNavArea {
-	background: transparent url("gfx/modNavBG.jpg") top left repeat;
+	background: transparent url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/modNavBG.jpg") top left repeat;
 	border: solid #fff;
 	border-width: 0 1px 1px 1px;
 	width: 958px;	
 }
 #wrapper-copyright div.sk-container {
-	background: #555555 url("gfx/copyRightBG.jpg") top left repeat-x;
+	background: #555555 url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/copyRightBG.jpg") top left repeat-x;
 	border: solid #fff;
 	border-width: 0 1px 1px 1px;
 	width: 958px;
@@ -541,9 +555,11 @@ nav#modNavArea {
 	
 }
 @media screen and (max-width: 767px) {
-	div.contactInfo span, div.footerData span {
+	div.contactInfo span, span.credit.footerLinks {
 		text-align: center;
-		line-height: 45px;	
+		line-height: 45px;
+		margin-right: 0px;
+		margin-left: 0px;	
 	}	
 }
 @media screen and (max-width: 767px) and (min-width: 480px) {
@@ -600,7 +616,7 @@ ul#nav {
 			color: #fff;
 			font-family: "Century Gothic", Verdana, Geneva, sans-serif;
 			border-bottom: 1px solid #999;
-			background: transparent url("gfx/navItemBG.jpg");
+			background: transparent url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/navItemBG.jpg");
 			
 			position: relative;
 			text-shadow: 1px 1px 1px #444;
@@ -609,7 +625,7 @@ ul#nav {
 		ul#nav li.current > a,
 		ul#nav li a:hover {
 		    color: #fff;
-			background: transparent url("gfx/navCurrentBG.jpg");
+			background: transparent url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/navCurrentBG.jpg");
 			}
 		ul#nav li.current > a:after,
 		ul#nav li a:hover:after {
@@ -652,7 +668,7 @@ ul#nav {
 			}
 		
 		ul#nav li ul li a:hover, ul#nav li.current ul li a:hover { /* second level dropdown button hover state */	
-			background: transparent url("gfx/navCurrentBG.jpg");
+			background: transparent url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/navCurrentBG.jpg");
 			}
 		
 						ul#nav li ul li ul li a, ul#nav li.current ul li ul li a { /* third level dropdown buttons */
@@ -667,7 +683,7 @@ ul#nav {
 							}
 						
 						ul#nav li ul li ul li a:hover, ul#nav li.current ul li ul li a:hover { /* third level dropdown button hover state */						
-							background: transparent url("gfx/navCurrentBG.jpg");
+							background: transparent url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/navCurrentBG.jpg");
 							}
 		 
 		ul#nav li ul li ul { /* third-and-above-level lists 
@@ -693,7 +709,7 @@ ul#nav {
 /* Navigation  media queries */
 
      @media only screen and (max-width: 766px) {
-	 
+	 #sidebar {display:none;}
 	 a#navTab {
 		display:inline-block;
 		width:30px;
@@ -701,14 +717,14 @@ ul#nav {
 		border-radius: 8px;
 		border: 2px solid #CCC;	
 		cursor:pointer;
-		position:fixed;
+		position:absolute;
 		top:5px;
 		right:5px;
 		z-index: 800;
-		background-image:url("gfx/icon-menu.png");
 		background-repeat:no-repeat;
 		background-position:top left;
 		background-color:#333;
+		background-image:url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/icon-menu.png");
 		}	
 				
 	a#navTab:hover {
@@ -719,20 +735,39 @@ ul#nav {
 	 a#navTab.active {
 		 background-position:bottom left;
 		 }
-	 			 
-	 #menu {display:none;}
+	 
+	 		 
+	 #m-wrapper-menu {  
+		   display:inline-block;
+		   width:100%;
+		   text-align:center;
+		   background: -moz-linear-gradient( 		top, 		#a3a3a3 0%, 		#3b3b3b 50%, 		#242424 50%, 		#000000);
+			background: -webkit-gradient( 		linear, left top, left bottom, 		from(#a3a3a3), 		color-stop(0.50, #3b3b3b), 		color-stop(0.50, #242424), 		to(#000000));
+			-moz-box-shadow: 		0px 1px 3px rgba(000,000,000,0.5), 		inset 0px 0px 1px rgba(255,255,255,0.6);
+			-webkit-box-shadow: 		0px 1px 3px rgba(000,000,000,0.5), 		inset 0px 0px 1px rgba(255,255,255,0.6);
+			box-shadow: 		0px 1px 3px rgba(000,000,000,0.5), 		inset 0px 0px 1px rgba(255,255,255,0.6);
+		}
 	 
 	 #m-menu {
 			background-color:#878787;
 			display: block;
 			left: 0;
-			position: fixed;
+			position: relative;
 			width: 100%;
 			z-index: 600;
+			height: auto;
+			overflow: visible;
+			padding: 0;
+			margin: 0 auto;
+			
 		 }	
 		 
 		nav#m-menu {
 			transition: top 0.75s ease 0s;
+		}
+		
+		#m-menu-content {
+			display: none; /* hides the menu */
 		}
 		
 	  #m-menu ul#nav {
@@ -869,8 +904,10 @@ ul#mirror-menu-module {
 			}
 @media screen and (max-width: 767px) {
 	ul#mirror-menu-module li {
-		float: none;
-		display: inline;	
+		display: inline-block;
+    		float: none;
+    		padding: 0 10px;
+    		margin-left: 0px;
 	}
 }
 
@@ -886,7 +923,11 @@ div#copyright {
 	color:#fff;
 	
 }
-
+div#copyright a {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: underline;
+}
 div#copyright br {
 	display:none;
 	}
@@ -942,6 +983,7 @@ label {
 }
 input[type="text"] {
 	width: 95%;
+	clear: left;
 }
 input[type="password"] {
 	width: 95%;
@@ -963,7 +1005,7 @@ input[type="file"] {
 input[type="submit"] {
 	width: 48%;
 	font: 21px/48px "Century Gothic", Verdana, Geneva, sans-serif;
-	background: #146DDB url("gfx/headerBG.jpg") top left repeat;
+	background: #146DDB url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/headerBG.jpg") top left repeat;
 	color: #fff;
 	border: 2px solid;
 	cursor: pointer;
@@ -972,7 +1014,7 @@ input[type="submit"] {
 input[type="reset"] {
 	width: 48%;
 	font: 21px/54px "Century Gothic", Verdana, Geneva, sans-serif;
-	background: #666 url("gfx/modNavBG.jpg") top left repeat;
+	background: #666 url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/modNavBG.jpg") top left repeat;
 	color: #fff;
 	border: 2px solid;
 	cursor: pointer;
@@ -1000,7 +1042,7 @@ form *:focus {
 
 /* Widgets */
 
-.widget-wrapper {margin: 10px 10px 20px;}
+.widget-wrapper {margin: 10px 15px 20px !important;}
 .widget-title {}
 .widget-body {}
 
@@ -1090,13 +1132,13 @@ form *:focus {
     border-radius:10px;
 	font: 21px/40px "Century Gothic", Verdana, Geneva, sans-serif;
 	color: #fff;
-	background: #146DDB url("gfx/headerBG.jpg") top left repeat;
+	background: #146DDB url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/headerBG.jpg") top left repeat;
 	margin-bottom: 18px;
 	}
 	
 div.widget-button:hover{
 	cursor:pointer;
-	background: #666 url("gfx/modNavBG.jpg") top left repeat;
+	background: #666 url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/modNavBG.jpg") top left repeat;
 	}
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -1145,7 +1187,7 @@ div.widget-button:hover{
 	height: 46px;
 	display: block;
 	margin-bottom: 7px;
-	background: #ddd url("gfx/back-to-top.png") no-repeat center center;
+	background: #ddd url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/back-to-top.png") no-repeat center center;
 	/* rounded corners */
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -1226,7 +1268,7 @@ a.m-click-phone span, a.m-click-mail span, a.m-click-map span {
 	overflow:hidden;
 	text-align:center;
 	margin:0 auto;
-	background-image: url("gfx/mobile-panel-icons.png");
+	background-image: url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/mobile-panel-icons.png");
 	background-repeat:no-repeat;
 	display:block;
 	padding:0px;
@@ -1293,7 +1335,7 @@ a.websplanet {
     text-align: left;
 }
 .footerText {
-	display: none; /* these are just empty spans in the footer area, display none lets .addthis_toolbox to be aligned properly */
+	display: none !important; /* these are just empty spans in the footer area, display none lets .addthis_toolbox to be aligned properly */
 }
 .addthis_default_style .at300b, .addthis_default_style .at300bo, .addthis_default_style .at300m {
 	margin-top: 4px;
@@ -1515,25 +1557,22 @@ height: 16px !important;
 }
 #FAQ_category_list li a,
 #FAQ_category_list li a:visited {
-    background-color: #146DDB; /* replace with theme color */
     border-radius: 10px 10px 10px 10px;
-    font-family: Verdana, Geneva, sans-serif; /* replace with theme fonts */
+    font-family: "Century Gothic", Verdana, Geneva, sans-serif; /* replace with theme fonts */
     font-size: 21px;
     height: auto;
     line-height: 40px;
     text-align: center;
-    width: 100%;
     z-index: 1001;
     color: #fff;
     border: none;
+    background: url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/headerBG.jpg") repeat scroll left top #146DDB;
 }
 #FAQ_category_list li a:hover,
-#FAQ_category_list li a:focus,
 #FAQ_category_list li a:active {
 	cursor:pointer;
-	box-shadow: 0 0 10px #000000 inset;
-	-webkit-box-shadow: 0 0 10px #000000 inset;
-	background: #146DDB; /* replace with theme color */
+	
+	background: url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/modNavBG.jpg") repeat scroll left top #666666;
     filter: progid:DXImageTransform.Microsoft.gradient( enabled=false );
 }
 ul#FAQ_category_list span {
@@ -1562,7 +1601,7 @@ ul#FAQ_category_list span p span {
 .jobs-title:hover {
     background: none;
     border: none;
-        font-family: Verdana, Geneva, sans-serif; /* replace with theme fonts */
+        font-family: "Century Gothic", Verdana, Geneva, sans-serif; /* replace with theme fonts */
         font-size: 24px;
         padding-left: 0px;
         color: #146DDB; /* replace with theme color */
@@ -1571,12 +1610,13 @@ ul#FAQ_category_list span p span {
 .jobs-title a:focus,
 .jobs-title a:active {
 	text-decoration: underline;
+	background: url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/headerBG.jpg") repeat scroll left top #146DDB;
 }
 
 .jobs-apply a {
     background-color: #146DDB; /* replace with theme color */
     border-radius: 10px 10px 10px 10px;
-    font-family: Verdana, Geneva, sans-serif;/* replace with theme fonts */
+    font-family: "Century Gothic", Verdana, Geneva, sans-serif;/* replace with theme fonts */
     font-size: 16px;
     height: auto;
     line-height: 40px;
@@ -1590,8 +1630,74 @@ ul#FAQ_category_list span p span {
 .jobs-apply a:active,
 .jobs-apply a:focus {
     cursor:pointer;
-	box-shadow: 0 0 10px #000000 inset;
-	-webkit-box-shadow: 0 0 10px #000000 inset;
-	background: #146DDB; /* replace with theme color */
+
+	background: url("http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_6/68/685/336/gfx/modNavBG.jpg") repeat scroll left top #666666;
     filter: progid:DXImageTransform.Microsoft.gradient( enabled=false );
 }
+.Events_item_desc {
+	clear: both;
+}
+ul#FAQ_category_list {
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 767px) {
+	ul#FAQ_category_list {
+    		margin: 0 10px;
+	}
+	section#content > h1 {
+		margin-left: 10px;
+	}
+}
+li.adress-block-field {
+	margin-right: 2%;
+	width: 48%;
+}
+.diy-guestbook-form input, .diy-guestbook-form textarea {
+    clear: left;
+    float: left;
+}
+div#jobs-module ul {
+    margin: 0;
+    padding: 0;
+}
+div.Events_item {
+	padding: 0;
+}
+div.rss ul {
+    padding: 0;
+}
+.checkboxPaymentMethod label {
+    display: none;
+}
+.ypreviews {margin-bottom:30px;}
+.PaymentMethod_widget .checkboxPaymentMethod span {
+	height: 40px;
+	width: 62px;
+}
+li.checkboxPaymentMethod {
+	margin: 0px !important;
+	width: 62px !important;
+}
+.facebook-like-box iframe {
+    max-width: 100%;
+}
+div.opening-hour-row span {
+    clear: left !important;
+    display: block;
+}
+
+/* --------------- Default Site Callout Classes --------------- 
+div.horizontal.callouts div.vertical div.diy-f-spot.callout1 div.diy-f-spot-inner div.widget-wrapper,
+div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inner div.widget-wrapper {
+	width:44% !important;
+	float:left !important;
+}	
+	 
+@media screen and (max-width: 767px) {
+	div.horizontal.callouts div.vertical div.diy-f-spot.callout1 div.diy-f-spot-inner div.widget-wrapper,
+	div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inner div.widget-wrapper {
+		width:auto !important;
+		float:left !important;
+	}
+}*/
