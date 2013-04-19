@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>Responsive Structure</title>
+<link href="template.css" rel="stylesheet" type="text/css" />
+<script src="gfx/ui.core.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+
+<!-- BEGIN HTML COPY/PASTE -->
+
+
+<script src="gfx/jquery.scroll-follow.js"></script>
+<script src="gfx/jquery.easing.1.3"></script>
+
+<!-- script for positioning the mobile nav -->
+<script type="text/javascript" src="gfx/yp-scripts.js"></script>
+
+
+<!-- IE 7 sidebar fix do not remove -->
+<!--[if IE 7]>
+<script>
+$(document).ready(function(){
+	var cHeight = $("#content-container").height();
+	$("#sidebar").css("height", cHeight)
+});
+</script>
+<![endif]-->
+
+<!-- IE HTML5 fix do not remove -->
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- mobile navigation script -->
+<script>
+$(document).ready(function(){
+	$("#navTab").click(function(){
+	  $("#m-menu-content").slideToggle("slow");
+	  $(this).toggleClass("active");
+	  	});
+	});
+</script>
+<!-- end mobile navigation script -->
+
+
+
+
+
+</head>
+
+ 
+<body id="mysite">
+<!-- mobile menu button -->
+<a onclick="navTab()" id="navTab"></a>  
+<!-- end mobile menu button -->
+
+<div class="skinBg">
+
+<!-- back to top -->
+<p id="back-top">
+		<a href="#top"><span></span>Back to Top</a>
+</p>
+<!-- end back to top -->
+
+
+
+<!-- mobile menu -->
+	<nav id="m-menu" class="sixteen columns">
+        	{Site_Menu}   
+	</nav>
+<!-- end mobile menu -->
+
+<!-- mobile cta panel -->
+<div id="m-panel">
+        <div class="m-panel-content">
+          <div class="icon">
+            <a href="tel:{PHONE}" class="m-click-phone"><span>{LANG_CALL_US_M}</span></a>
+          </div>
+          <div class="icon">
+            <a href="mailto:{EMAIL}" class="m-click-mail"><span>{LANG_SEND_EMAIL_M}</span></a>
+          </div>
+          <div class="icon">
+            <a href="{CLICK2MAPURL}" class="m-click-map"><span>{LANG_FIND_ON_MAP_M}</span></a>
+          </div>
+
+        </div>
+        
+</div> 
+<!-- end mobile cta panel -->
+<div class="sk-container">
+
+
+</div>
+
+
+<div class="sk-container container-page">
+	<div class="header-container">
+        <div id="logo" class="eleven columns">
+            {LOGO}
+        </div><!-- end logo -->
+        <div id="phone-number" class="five columns">
+            {PHONE}
+        </div><!-- end phone -->
+        <!-- begin mobile phone # -->
+        <div id="m-phone-number">
+            <a href="tel:{PHONE}">{PHONE}</a>
+        </div> 
+        <!-- end mobile phone # -->
+    </div>
+	<header id="header" class="sixteen columns">
+        <div id="header-image-container">
+            {HEADER_IMAGE_1} 
+        </div> 
+        <!-- end header image -->
+    </header><!-- end header container --> 
+    <div class="clear"></div>
+    
+    <div id="sidebar">
+    	
+    	<div class="secondBG"></div>
+            <nav id="menu">
+                {Site_Menu} 
+            </nav><!-- end web nav -->
+               
+    </div><!-- end sidebar -->
+    
+    <div id="content-container">
+    	    
+            <section id="content" class="twelve columns clearfix">
+        
+            	<h1>{CONTENT_TITLE_ONLY}</h1>
+                 {CONTENT_DATA}       
+            </section> <!-- end content area -->
+            <div class="clear"></div> 
+    </div><!-- end content container -->
+    
+</div> <!-- end sk-container -->
+<div class="sk-container footerArea">
+	<div id="wrapper-footer">
+        <footer class="sk-container">
+            
+            <div id="footer-area" class="alpha omega sixteen columns">
+                 <div class="ten columns alpha contactInfo">
+                    <span>{ADDRESS} | Phone: {PHONE}</span>
+                 </div>
+                 <div class="six columns omega footerData">
+                    <span>{FOOTER_DATA}</span>
+                 </div>
+            </div>   
+            
+            <nav id="modNavArea" class="sixteen columns alpha omega">
+                {MODULE_MIRROR_MENU}    
+            </nav>  <!-- end mirrior menu module -->
+            
+        </footer>    
+    </div>
+
+    <!-- footer end -->
+    
+    <div id="wrapper-copyright">
+            <div class="sk-container">
+            <script src='http://www.realpages.com/sites/web2dot0/copyright.js' type='text/javascript'></script>
+            </div>
+    </div>
+ </div>   
+<!-- header -->
+
+<!-- content area -->
+
+
+
+ <!-- wrapper copyright end -->
+    
+</div> <!-- end skin bg -->
+
+
+
+<!-- END HTML COPY/PASTE -->
+</body>
+</html>
